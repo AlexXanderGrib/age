@@ -4,12 +4,10 @@
 
 ## Table of contents
 
-### Properties
+### Namespaces
 
-- [default](modules.md#default)
+- [default](modules/default.md)
 
-## Properties
+### Classes
 
-### default
-
-• **default**: `any`
+- [Age](classes/Age.md)

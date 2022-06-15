@@ -1,31 +1,32 @@
 # Quality Package Template
 
 > Light and fully documented Age object for TS and JS
+
 [![Test Status](https://github.com/AlexXanderGrib/age/actions/workflows/test.yml/badge.svg)](https://github.com/AlexXanderGrib/age)
-[![Downloads](https://img.shields.io/npm/dt/age.js.svg)](https://npmjs.com/package/age.js)
+[![Downloads](https://img.shields.io/npm/dt/age2.svg)](https://npmjs.com/package/age2)
 [![last commit](https://img.shields.io/github/last-commit/AlexXanderGrib/age.svg)](https://github.com/AlexXanderGrib/age)
 [![codecov](https://img.shields.io/codecov/c/github/AlexXanderGrib/age/main.svg)](https://codecov.io/gh/AlexXanderGrib/age)
 [![GitHub](https://img.shields.io/github/stars/AlexXanderGrib/age.svg)](https://github.com/AlexXanderGrib/age)
-[![age.js](https://snyk.io/advisor/npm-package/age.js/badge.svg)](https://snyk.io/advisor/npm-package/age.js)
-[![Known Vulnerabilities](https://snyk.io/test/npm/age.js/badge.svg)](https://snyk.io/test/npm/age.js)
-[![Quality](https://img.shields.io/npms-io/quality-score/age.js.svg?label=quality%20%28npms.io%29&)](https://npms.io/search?q=age.js)
-[![npm](https://img.shields.io/npm/v/age.js.svg)](https://npmjs.com/package/age.js)
-[![license MIT](https://img.shields.io/npm/l/age.js.svg)](https://github.com/AlexXanderGrib/age/blob/main/LICENSE.txt)
-[![Size](https://img.shields.io/bundlephobia/minzip/age.js)](https://bundlephobia.com/package/age.js)
+[![age2](https://snyk.io/advisor/npm-package/age2/badge.svg)](https://snyk.io/advisor/npm-package/age2)
+[![Known Vulnerabilities](https://snyk.io/test/npm/age2/badge.svg)](https://snyk.io/test/npm/age2)
+[![Quality](https://img.shields.io/npms-io/quality-score/age2.svg?label=quality%20%28npms.io%29&)](https://npms.io/search?q=age2)
+[![npm](https://img.shields.io/npm/v/age2.svg)](https://npmjs.com/package/age2)
+[![license MIT](https://img.shields.io/npm/l/age2.svg)](https://github.com/AlexXanderGrib/age/blob/main/LICENSE.txt)
+[![Size](https://img.shields.io/bundlephobia/minzip/age2)](https://bundlephobia.com/package/age2)
 
 ## 📦 Installation
 
 - **Using `npm`**
   ```shell
-  npm i age.js
+  npm i age2
   ```
 - **Using `Yarn`**
   ```shell
-  yarn add age.js
+  yarn add age2
   ```
 - **Using `pnpm`**
   ```shell
-  pnpm add age.js
+  pnpm add age2
   ```
 
 ## ⚙️ Usage
@@ -34,11 +35,11 @@
 
 1. ES Modules
    ```javascript
-   import { Age } from "age.js";
+   import { Age } from "age2";
    ```
 2. Common JS
    ```javascript
-   const { Age } = require("age.js");
+   const { Age } = require("age2");
    ```
 
 ### How to construct

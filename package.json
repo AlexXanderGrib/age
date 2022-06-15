@@ -1,6 +1,6 @@
 {
-  "name": "age.js",
-  "version": "1.0.0",
+  "name": "age2",
+  "version": "1.0.2",
   "description": "🎂 Lightweight and documented age object for converting date of birth to age",
   "scripts": {
     "test": "jest",
