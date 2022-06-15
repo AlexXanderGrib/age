@@ -1,9 +1,10 @@
 import typescript from "rollup-plugin-typescript2";
 import { builtinModules } from "module";
-import { dependencies, devDependencies, name, version } from "./package.json";
+import { dependencies, devDependencies } from "./package.json";
 import glob from "glob";
 import cleanup from "rollup-plugin-cleanup";
 import prettier from "rollup-plugin-prettier";
+import { terser } from "rollup-plugin-terser";
 
 import prettierConfig from "./.prettierrc.json";
 
@@ -44,6 +45,21 @@ const config = {
       },
       externalLiveBindings: false,
       minifyInternalExports: true
+    },
+    {
+      dir: "./dist/browser",
+      format: "module",
+      preserveModules: true,
+      entryFileNames: "[name].mjs",
+      compact: true,
+      generatedCode: {
+        constBindings: true,
+        arrowFunctions: true,
+        objectShorthand: true
+      },
+      externalLiveBindings: false,
+      minifyInternalExports: true,
+      plugins: [terser({ compress: true, module: true })]
     }
   ],
   treeshake: {
@@ -55,7 +71,10 @@ const config = {
     propertyReadSideEffects: false
   },
   plugins: [
-    typescript({ tsconfig: "./tsconfig.build.json" }),
+    typescript({
+      tsconfig: "./tsconfig.build.json",
+      useTsconfigDeclarationDir: true
+    }),
     cleanup({
       extensions: ["js", "ts", "mjs"],
       comments: ["jsdoc"],

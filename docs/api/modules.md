@@ -4,10 +4,12 @@
 
 ## Table of contents
 
-### Namespaces
+### Properties
 
-- [default](modules/default.md)
+- [default](modules.md#default)
 
-### Classes
+## Properties
 
-- [Example](classes/Example.md)
+### default
+
+• **default**: `any`

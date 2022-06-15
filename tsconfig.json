@@ -8,6 +8,7 @@
     "declaration": true,
     "outDir": "./dist",
     "rootDir": "./src",
+    "declarationDir": "./dist/dts",
     "removeComments": false,
     "noEmit": false,
     "strict": true,
